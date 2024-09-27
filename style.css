@@ -1,0 +1,87 @@
+body{ /* By calling the body element from html file, you can now style it using CSS */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "VT323", monospace;
+}
+
+body{
+  background-color: linen;
+}
+
+#game-board{
+  border-radius: 100px;
+  display: grid;
+  grid-template-columns: repeat(20, 20px);
+  grid-template-rows: repeat(20, 20px);
+  margin: 5px;
+}
+
+.game-board-1{
+  border: rgb(247, 225, 184) 10px solid;
+  border-radius: 30px;
+  box-shadow: inset 0 0 0 10px rgb(247, 225, 184);
+}
+
+.game-board-2{
+  border: rgb(255, 240, 214) 8px solid;
+  border-radius: 26px;
+  box-shadow: inset 0 0 0 10px rgb(255, 240, 214);
+}
+
+.game-board-3{
+  border: rgb(250, 233, 201) 30px solid;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 5px rgb(250, 233, 201);
+}
+#instruction-text{
+  position: absolute;
+  top: 70%;
+  color: rgb(1, 12, 1);
+  width: 300px;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 30px;
+  margin: 0;
+
+}
+
+.scores{
+  display: flex;
+  justify-content: space-between;
+}
+#score{
+  color: rgb(40, 125, 60);
+}
+
+#score, #highScore{
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 10px;
+}
+#highScore{
+  color:rgb(23, 77, 6);
+  /* display: none; so that when players first play, there is no high score */
+}
+
+.game-board-3{
+  background-color: rgb(252, 238, 215);
+}
+.snake{
+  background-color: rgb(97, 167, 99);
+  border: white 1px dotted; 
+}
+.food{
+  background-color: rgb(239, 33, 33) ;
+  background-image: radial-gradient(circle, white 10%, transparent 10%);
+  background-size: 7px 4px;
+  /* border: rgb(239, 33, 33) 2px dotted; */
+}
+#logo{
+  width: 300px;
+  height: auto;
+  position: absolute;
+
+}
